@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="km">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#13241c">
+<title>Cambodia Royale 3D</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="hud">
+  <div class="brand"><b>CAMBODIA ROYALE</b><small>3D • WEB BATTLE ARENA</small></div>
+  <div class="stats"><span id="players">👥 1 player</span><span id="health">❤ 100</span><span id="status">Offline demo</span></div>
+  <div id="menu" class="panel">
+    <h1>CAMBODIA<br><em>ROYALE 3D</em></h1>
+    <p>សមរភូមិកោះភូមិកម្ពុជា</p>
+    <label>ឈ្មោះអ្នកលេង</label>
+    <input id="name" maxlength="16" placeholder="Player" value="Player">
+    <label>Room code សម្រាប់លេងជាមួយមិត្ត</label>
+    <input id="room" maxlength="20" placeholder="ឧ. KHMER123" value="KHMER123">
+    <button id="play">ចូលលេង / PLAY</button>
+    <p class="hint">កំណែ Web prototype • Online needs server setup</p>
+  </div>
+  <div id="notice">Loading 3D arena…</div>
+  <div id="controls">
+    <div id="stick"><div id="knob"></div></div>
+    <div class="right-controls">
+      <button id="look" aria-label="Look around">↻</button>
+      <button id="fire">FIRE</button>
+      <button id="jump">JUMP</button>
+    </div>
+  </div>
+  <div id="crosshair">+</div>
+  <div id="feed"></div>
+</div>
+<script type="module" src="game.js"></script>
+</body>
+</html>
